@@ -1,0 +1,361 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #ffffff;
+    color: #3D3D3D;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-item-1 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #DD673C;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-item span {
+    font-size: 16px;
+}
+
+.header-left .mankai-logo {
+    width: 40px;
+}
+
+.header-left img:not(.mankai-logo) {
+    width: 24px;
+    cursor: pointer;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    background: linear-gradient(to bottom, #ff6f61, #ff4d4d);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.banner-text {
+    max-width: 50%;
+    position: relative;
+}
+
+.quote-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.banner-text .quote {
+    font-size: 16px;
+    margin: 40px 0;
+    padding: 0 20px;
+    display: inline-block;
+    max-width: 100%;
+}
+
+.quote-icon-top,
+.quote-icon-bottom {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.quote-icon-top {
+    top: 0;
+    left: 0;
+}
+
+.quote-icon-bottom {
+    bottom: 0;
+    right: 0;
+}
+
+.banner-image img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.course-section {
+    padding: 120px;
+}
+
+.course-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.course-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.course-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.course-info {
+    padding: 20px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.course-level {
+    display: inline-block;
+    font-size: 12px;
+    color: #DD673C;
+    background-color: #FEF1EC;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.course-meta {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.course-meta span {
+    font-size: 14px;
+    color: #3D3D3D;
+    display: flex;
+    align-items: center;
+}
+
+.course-meta img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.course-title {
+    margin-bottom: 10px;
+}
+
+.course-title h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3D3D3D;
+}
+
+.course-action {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    width: 100%;
+}
+
+.learn-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #F8E9EA;
+    border: none;
+    border-radius: 8px;
+    color: #DD673C;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100%;
+}
+
+.learn-now img {
+    width: 30px;
+    height: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.pagination .numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.pagination button.active {
+    background-color: #DD673C;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.pagination .prev-next {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #ff6f61, #ff4d4d);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer .logo {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-info {
+    max-width: 30%;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.social-links {
+    max-width: 20%;
+}
+
+.social-links h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+.quote {
+    max-width: 40%;
+}
+
+.quote p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.quote p:last-child {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-content p,
+.footer-content a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}

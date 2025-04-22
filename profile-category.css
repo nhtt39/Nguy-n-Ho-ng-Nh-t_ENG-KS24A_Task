@@ -1,0 +1,332 @@
+body {
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+.header-left .mankai-logo {
+    width: 40px;
+}
+
+.header-left img:not(.mankai-logo) {
+    width: 24px;
+    cursor: pointer;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.header-icons img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.profile-section {
+    padding: 50px;
+    margin: 20px 50px;
+}
+
+.profile-section h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-content {
+    display: flex;
+    gap: 50px;
+}
+
+.profile-image {
+    text-align: center;
+    flex: 1;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-image p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.change-image-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #DD673C;
+    border-radius: 5px;
+    color: #DD673C;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.profile-info {
+    flex: 2;
+}
+
+.info-note {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-group input:disabled {
+    background-color: #f5f5f5;
+    color: #666;
+}
+
+.change-password-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.change-password-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #DD673C;
+    border-radius: 5px;
+    color: #DD673C;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.button-icon {
+    width: 16px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.modal-form .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-form input {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    background-color: #DD673C;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #ff6f61, #ff4d4d);
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer .logo {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer .logo span {
+    color: #fff;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-info {
+    max-width: 30%;
+}
+
+.contact-info h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.social-links {
+    max-width: 20%;
+}
+
+.social-links h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+}
+
+.quote {
+    max-width: 40%;
+}
+
+.quote p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.quote p:last-child {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer-content p,
+.footer-content a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 12px;
+}
