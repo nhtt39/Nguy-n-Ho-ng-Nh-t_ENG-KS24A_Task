@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../Css/login.css">
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="../assets/icons/Copy of LogoMankai 2.png" alt="MANKAI Logo">
+            </div>
+            <h1>Đăng nhập</h1>
+            <p>Khám phá kho tàng kiến thức bất tận cùng bộ tài liệu độc quyền với Mankai Academy</p>
+            <form>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <div class="input-wrapper">
+                        <span class="icon">📧</span>
+                        <input type="email" id="email" placeholder="you@company.com">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <div class="input-wrapper">
+                        <span class="icon">🔒</span>
+                        <input type="password" id="password" placeholder="••••••••">
+                    </div>
+                </div>
+                <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+        <div class="right-section">
+            <div class="banner">
+                <img id="banner-image" src="../assets/img/3f8438a6cfd5ea4fdf5a75af085b8a89ef96fabe.png" alt="Banner">
+                <div class="banner-text">
+                    <h2 id="banner-title">Kho học liệu miễn phí</h2>
+                    <p id="banner-description">Miễn phí truy cập kho tài liệu khổng lồ, bao gồm bài giảng, video và tài liệu đọc phù hợp với mọi đối tượng.</p>
+                </div>
+                <img class="overlay-image" src="../assets/img/Rectangle 13.png" alt="">
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="showSlide(0)"></span>
+                <span class="dot" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+            </div>
+        </div>
+    </div>
+    <script src="../Js/login.js"></script>
+</body>
+</html>

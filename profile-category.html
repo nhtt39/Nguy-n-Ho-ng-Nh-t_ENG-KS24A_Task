@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard-Hồ sơ của tôi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/profile-category.css">
+    <link rel="stylesheet" href="../Css/reset.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="../assets/icons/Copy of LogoMankai 2.png" alt="MANKAI Logo" class="mankai-logo">
+            <div class="header-item">
+                <img src="../assets/icons/home.png" alt="Trang chủ">
+                <span>Trang chủ</span>
+            </div>
+            <div class="header-item">
+                <img src="../assets/icons/book.png" alt="Bài viết">
+                <span>Bài viết</span>
+            </div>
+        </div>
+        <div class="header-icons">
+            <img src="../assets/icons/search-normal.png" alt="Search">
+            <img src="../assets/icons/notification.png" alt="Notifications">
+            <img src="../assets/icons/Dropdown.png" alt="User">
+        </div>
+    </header>
+
+    <main class="profile-section">
+        <h1>Chỉnh sửa thông tin</h1>
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="../assets/img/264ae50c597aef89a0c4eff3aa6d5fa1503db174.jpg" alt="Profile Image">
+                <p>Kích thước ảnh nhỏ nhất: 200 x 200px, định dạng PNG hoặc JPG</p>
+                <button class="change-image-btn">Đổi ảnh</button>
+            </div>
+            <div class="profile-info">
+                <p class="info-note">Tại đây bạn có thể xem các thông tin hiển thị của mình và chỉnh sửa ảnh đại diện. Các thông tin cá nhân còn lại là mặc định và không thể chỉnh sửa.</p>
+                <h2>Thông tin cá nhân</h2>
+                <form>
+                    <div class="form-grid">
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="last-name">Họ</label>
+                                <input type="text" id="last-name" value="Nguyễn" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="vien@gmail.com" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="text" id="phone" value="0981 965 304" disabled>
+                            </div>
+                            <div class="form-group change-password-group">
+                                <label> </label>
+                                <button type="button" class="change-password-btn" id="change-password-btn">
+                                    <img src="../assets/icons/lock.png" alt="Lock Icon" class="button-icon">
+                                    Đổi mật khẩu
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="first-name">Tên</label>
+                                <input type="text" id="first-name" value="Ánh Viên" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Ngày sinh</label>
+                                <input type="text" id="dob" value="15/03/2006" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="student-id">Mã sinh viên</label>
+                                <input type="text" id="student-id" value="PT242" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="password-modal">
+        <div class="modal-content">
+            <h3>Đổi mật khẩu</h3>
+            <div class="modal-form">
+                <div class="form-group">
+                    <label for="current-password">Mật khẩu cũ</label>
+                    <input type="password" id="current-password" placeholder="Nhập mật khẩu hiện tại">
+                </div>
+                <div class="form-group">
+                    <label for="new-password">Mật khẩu mới</label>
+                    <input type="password" id="new-password" placeholder="Nhập mật khẩu mới">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Xác nhận mật khẩu mới</label>
+                    <input type="password" id="confirm-password" placeholder="Xác nhận mật khẩu mới">
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <button class="cancel-btn" id="cancel-btn">Hủy</button>
+                <button class="save-btn" id="save-btn">Cập nhật</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo">
+            <img height="80px" src="../assets/icons/Frame 54.png" alt="MANKAI Logo">
+        </div>
+        <p>MANKAI ACADEMY - HỌC VIÊN ĐÀO TẠO PHÁT TRIỂN TIẾNG NHẬT THỰC CHIẾN</p>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>THÔNG TIN LIÊN HỆ</h4>
+                <p class="contact-item">
+                    <img src="../assets/icons/Featured icon.png" alt="Location Icon" class="contact-icon">
+                    Địa chỉ: Tòa Sông Đà, Đường Phạm Hùng, Mỹ Đình, Nam Từ Liêm, Hà Nội
+                </p>
+                <p class="contact-item">
+                    <img src="../assets/icons/Featured icon (1).png" alt="Phone Icon" class="contact-icon">
+                    Hotline: 0835 662 538
+                </p>
+                <p class="contact-item">
+                    <img src="../assets/icons/Featured icon (2).png" alt="Mail Icon" class="contact-icon">
+                    Email: <a href="/cdn-cgi/l/email-protection#43303633332c3137032e222d28222a6d2627366d352d"><span class="__cf_email__" data-cfemail="8cefdbeffefee1fcfacee3efe0e5efe7a0ebeafba0f8e0">[email&#160;protected]</span></a>
+                </p>
+            </div>
+            <div class="social-links">
+                <h4>THEO DÕI CHÚNG TÔI</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="../assets/icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../assets/icons/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="quote">
+                <p>“Hạnh phúc là điểm khởi đầu của giáo dục và cũng là đích đến cuối cùng. Giang, với hơn 10 năm kinh nghiệm giảng dạy và luyện thi JLPT, mong muốn giúp các bạn rút ngắn thời gian, vượt qua khó khăn trong việc học tiếng Nhật, và chinh phục tấm bằng JLPT. Hãy biến học tập thành không chỉ là mục tiêu phát triển bản thân mà còn là hành trình hạnh phúc để hiện thực hóa những giấc mơ.”</p>
+                <p><strong>Anh Nguyễn Việt Lâm - CEO Rikker Academy</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 BY RIKKER ACADEMY - RIKKER EDUCATION - ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+
+    <script src="../Js/profile-category.js"></script>
+
+</body>
+</html>
